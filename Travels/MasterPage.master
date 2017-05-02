@@ -1,0 +1,185 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Master Page</title>
+    <link type="text/css" href="menu.css" rel="stylesheet" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 1273px;
+            height: 37px;
+        }
+        #fadeshow1
+        {
+            width: 1041px;
+        }
+        .style2
+        {
+            width: 1273px;
+            text-align: center;
+        }
+        .style3
+        {
+            width: 1273px;
+            height: 51px;
+        }
+        .style4
+        {
+            color: #FFFFFF;
+        }
+        .style5
+        {
+            color: #FFFFFF;
+            font-family: "Monotype Corsiva";
+        }
+        .style6
+        {
+            height: 22px;
+        }
+        .style7
+        {
+            height: 5px;
+            width: 646px;
+        }
+        .style8
+        {
+            color: #00FFFF;
+            font-size: large;
+            font-family: "Monotype Corsiva";
+        }
+        .style9
+        {
+            color: #00FFFF;
+            font-size: xx-large;
+            font-family: "Monotype Corsiva";
+        }
+    </style>
+   <script type="text/javascript" src="java script 4 pics/fadeslideshow.js"></script>
+<%--<script type="text/javascript" src="java script 4 pics/fadeslideshow.js">
+</script>
+<script type="text/javascript">
+    var mygallery = new fadeSlideShow({
+        wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+        dimensions: [970, 268], //width/height of gallery in pixels. Should reflect dimensions of largest image
+        imagearray: [
+		["Image/New folder/chopra-1.jpg"],
+		["Image/New folder/chopra-2.jpg"],
+		["Image/New folder/chopra-3.jpg"],
+		["Image/New folder/chopra-4.jpg"],
+		["Image/New folder/chopra-5.jpg"],
+				//<--no trailing comma after very last image element!
+	],
+        displaymode: { type: 'auto', pause: 250, cycles: 0, wraparound: false },
+        persist: false, //remember last viewed slide and recall within same session?
+        fadeduration: 200, //transition duration (milliseconds)
+        descreveal: "ondemand",
+        togglerid: ""
+    })
+</script>--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+        <div class="header">
+        <div style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c40000">
+        <table style="width: 1055px; height: 287px;" align="center">
+                <tr style="color: #000000">
+                    <td class="style6" rowspan="2" style="background-image: none; width: 936px; height: 8px">
+                        <asp:Image ID="Image2" runat="server" Height="94px" ImageUrl="~/images/Image/New folder/SR_3.JPG" Width="102px" />
+                        
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" style="width: 424px; height: 90px"><param name="movie" value="flashvortex.swf" /><param name="quality" value="best" /><param name="menu" value="true" /><param name="allowScriptAccess" value="always" />
+                        <embed src="flashvortex.swf" quality="best" menu="true" width="416" height="93" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always">
+                        </embed>
+                    </object>
+                    
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;<strong><span class="style8"></span></strong></td>
+                </tr>
+            <tr style="color: #000000">
+            </tr>
+                <tr>
+                    <td align="left" class="style7" style="height: 3px; width: 936px;">
+            <div id="menu" style="width: 987px">
+		<ul class="menu" style="width: 1028px; height: auto;">
+			<li><a href="Home.aspx" class="parent"><span>Home</span></a>
+			</li>
+			
+			<li><a href="View Packages.aspx" class="parent"><span>Packages</span></a>
+            </li>	
+			<li><a href="cars.aspx" style="left: 0px; top: 0px" id="A1"><span>Cars</span></a>
+		    </li>
+		    
+		    <li><a href="Query form.aspx"><span>Query form</span></a>
+			</li>
+				
+		    <li><a href="" style="left: 0px; top: 0px" id="A2"><span>Booking</span></a>
+		    <div><ul>
+								<li><a href="Show Booking.aspx"><span>Show Booking</span></a></li>
+								</ul></div>
+		    </li>
+            <li><a href="Terms.aspx"><span>Terms & Cond.</span></a>
+			</li>
+            <li><a href="Refund.aspx" style="left: 0px; width: 176px; top: 0px"><span>Cancel & Refund</span></a>
+			</li>
+			<li><a href=""><span>Feed Back</span></a>
+			<div><ul>
+								<li><a href="feedback.aspx"><span>Add Feedback</span></a></li>
+								<li><a href="viewfb.aspx"><span>View Feedback</span></a></li>
+								</ul></div>
+			</li>
+			
+			<li class="last"> <a href="Contactus.aspx"><span style="background-image: none; background-color: transparent">Contact us</span></a></li></ul>
+	</div>
+                        &nbsp;&nbsp;
+                    </td>
+                </tr>
+                </table>
+        <table style="width: 1053px; height: 619px;" align="center">
+            <tr>
+                <td colspan="2" class="style1">
+                    <asp:ContentPlaceHolder ID="cph1" runat="server">
+                    </asp:ContentPlaceHolder>
+        </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" style="width: 1273px">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Image/New folder/slogan.jpg" /></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" rowspan="1" style="width: 1273px; height: 7px;">
+                    <span style="font-size: 14pt; color: #ffffff; font-family: Monotype Corsiva; text-decoration: underline">
+                        <strong>SR Tours &amp; Travels.com</strong></span></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" rowspan="1" class="style3" style="height: 6px">
+                    <span class="style4">Copyright © 2010 - 2011
+                    </span>
+                    <br class="style4" />
+                    <span class="style4">All Rights Reserved to SR Tours &amp; Travels.</span></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="1" class="style2" style="height: 27px">
+                    <span class="style5">Website Designed, Developed, and Promoted by</span><span style="color: #00ff00; font-family: Monotype Corsiva"> &nbsp; 
+                    :-<br />
+                    SOHAL
+                        N. PATEL&nbsp;
+                        <br />
+                        HITESH R. ROHIT&nbsp; </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+    
+    </form>
+</body>
+</html>
